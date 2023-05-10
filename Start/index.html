@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/title-img.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Book Store</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navigation">
+        <button type="button" class="navbar-toggler hamburger-menu" data-toggle="collapse" data-target="#myNavbar">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </button>
+        <div class="bg-cover"></div>
+        <div class="collapse nav-content" id="myNavbar">
+            <div class="container-fluid">
+                <div class="row text-light">
+                    <div class="col-10 mx-auto">
+                        <!-- "flex-row" class to set them horizontally and "nav-justified" for EQUAL space between each LI element -->
+                        <ul class="navbar-nav flex-row nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">About Us<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">Library<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">Deals<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">Reviews<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link m-3 link-item" href="#">Contact<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 mx-auto">
+                        <form class="mt-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" value="Search">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn input-group-text">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col text-center">
+                        <h1 class="display-1 text-white">Your Chance</h1>
+                        <h3 class="text-light">Get Each Book For $9.99</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="img/book.png" class="img-fluid" width="550" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER section -->
+    <header class="d-flex align-items-center">
+    <!-- align SELF because it's ONLY for the logo that we want to use the "start" option -->
+    <!-- to center the container h1 (since we're in d-flex mode, the logo takes some space on the SAME line!) => "position-absolute" --> 
+        <div class="align-self-start position-absolute">
+            <a href="#">
+                <img src="img/book.png" class="m-4 img-fluid" width="120" alt="">
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-light display-1 font-italic mb-5 banner-heading">We <img src="img/heart.png"
+                            class="img-fluid" width="250"> Reading</h1>
+                    <a href="#" class="btn btn-lg btn-outline-danger text-uppercase px-5">Check Out</a>
+                </div>
+            </div>
+        </div> 
+    </header> 
+
+    <!-- GALLERY section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center my-5">
+                    <h1 class="text-secondary font-italic common-title">THE BEST LIBRARIES IN THE WORLD</h1>
+                </div>
+            </div>
+            <div class="row mb-4 first-row align-nav-item-end first-row-roll">
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <!-- for the lightbox gallery to work, we need to add the href => same link as the img src -->
+                    <a href="img/library1.jpg" data-lightbox="library" data-title="Clementinum, Prague">
+                                <img src="img/library1.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library2.jpg" data-lightbox="library"
+                        data-title="Bibliotheca Alexandrina, Alexandria, Egypt">
+                        <img src="img/library2.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library3.jpg" data-lightbox="library" data-title="Trinity College Old Library, Dublin">
+                        <img src="img/library3.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library4.jpg" data-lightbox="library" data-title="Central Library of Vancouver, Canada">
+                        <img src="img/library4.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row mb-4 second-row align-nav-item-end second-row-roll">
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library5.jpg" data-lightbox="library" data-title="Library of Congress, Washington, D.C.">
+                        <img src="img/library5.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library6.jpg" data-lightbox="library"
+                        data-title="New York Public Library (Stephen A. Schwarzman Building)">
+                        <img src="img/library6.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library7.jpg" data-lightbox="library" data-title="Marciana Library, Venice">
+                        <img src="img/library7.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+                    <a href="img/library8.jpg" data-lightbox="library"
+                        data-title="Seattle Public Library’s Central Library">
+                        <img src="img/library8.jpg" class="img-thumbnail gallery-img" alt="">
+                    </a>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <!-- FAMOUS WRITERS section -->
+    <section class="famous-writers pb-5">
+    <!-- Here we use a FLUID container since it makes the row LARGER! There's more room for each element on the row -->
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="text-secondary text-uppercase font-italic common-title my-3">The Most Famous Writers</h1>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-4 text-center align-self-center">
+                    <img src="img/writers/William_Shakespeare-book1.jpg" class="img-fluid" id="book-1" alt="">
+                </div>
+                <div class="col-lg-4 mx-auto text-center">
+                    <div id="accordion" class="writers-accordion">
+                        <div class="card">
+                            <div class="card-header p-5">
+                                <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                    data-toggle="collapse" data-target="#collapse1" id="button-William_Shakespeare">
+                                    William Shakespeare
+                                </button>
+                            </div>
+                            <div id="collapse1" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <!-- To remove some paddingX on the image, addition of a "card" element -->
+                                    <div class="card">
+                                        <img src="img/writers/William_Shakespeare.jpg" class="card-img-top img-fluid"
+                                            alt="">
+                                        <!-- Adding a new card-BODY element, USEFUL to add some 'natural' padding on the elements                                  <div class="card-body "> -->
+                                        <div class="card-body">
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Laudantium, ducimus!</p>
+                                            <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header p-5">
+                                <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                    data-toggle="collapse" data-target="#collapse2" id="button-Jane_Austen">
+                                    Jane Austen
+                                </button>
+                            </div>
+                            <div id="collapse2" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <img src="img/writers/Jane_Austen.jpg" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body ">
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Laudantium, ducimus!
+                                            </p>
+                                            <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header p-5">
+                                <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                    data-toggle="collapse" data-target="#collapse3" id="button-Charles_Dickens">
+                                    Charles Dickens
+                                </button>
+                            </div>
+                            <div id="collapse3" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <img src="img/writers/Charles_Dickens.jpg" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body ">
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Laudantium, ducimus!
+                                            </p>
+                                            <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header p-5">
+                                <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                    data-toggle="collapse" data-target="#collapse4" id="button-Victor_Hugo">
+                                    Victor Hugo
+                                </button>
+                            </div>
+                            <div id="collapse4" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card">
+                                        <img src="img/writers/Victor_Hugo.jpg" class="card-img-top img-fluid" alt="">
+                                        <div class="card-body ">
+                                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Laudantium, ducimus!
+                                            </p>
+                                            <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <a href="#" class="btn btn-block btn-outline-info">More Writers</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center align-self-center">
+                    <img src="img/writers/William_Shakespeare-book2.jpg" class="img-fluid" id="book-2" alt="">
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- SUGGESTED BOOKS section -->
+    <!-- <section class="pb-5 suggested-books">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="text-light text-uppercase font-italic common-title my-3">SUGGESTED BOOKS</h1>
+                </div>
+            <div class="row">
+                <div class="col-lg-6 books mx-auto">
+                    <a href="#">
+                        <img src="img/suggested-books/book1.jpg" class="img-fluid book book-1" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/suggested-books/book2.jpg" class="img-fluid book book-2" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/suggested-books/book3.jpg" class="img-fluid book book-3" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/suggested-books/book4.jpg" class="img-fluid book book-4" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- POPULAR BOOKS section -->
+    <section class="popular-books p-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="text-secondary text-uppercase font-italic common-title my-3">THE MOST POPULAR BOOKS OF THE WEEK</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center align-nav-item-center">
+                <div class="col-lg-3 rotate">
+                    <div class="card mb-3 text-center book-card">
+                        <div class="card-header">
+                            <h4 class="font-weight-light">A Tale of Two Cities</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/popular-books/A-Tale-of-Two-Cities.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-footer">
+                            By Charles Dickens
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h1 class="font-weight-light font-italic">ONLY FOR</h1>
+                                <h3 class="mb-3">$20</h3>
+                                <p><del>$100</del></p>
+                                <a href="#" class="btn btn-outline-danger px-4">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 rotate">
+                    <div class="card mb-3 text-center book-card">
+                        <div class="card-header">
+                            <h4 class="font-weight-light">Don Quixote</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/popular-books/Don-Quixote.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-footer">
+                            By Miguel De Cervantes
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h1 class="font-weight-light font-italic">ONLY FOR</h1>
+                                <h3 class="mb-3">$30</h3>
+                                <p><del>$150</del></p>
+                                <a href="#" class="btn btn-outline-danger px-4">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 rotate">
+                    <div class="card mb-3 text-center book-card">
+                        <div class="card-header">
+                            <h4 class="font-weight-light">One Hundred Years of Solitude</h4>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/popular-books/One-Hundred-Years-of-Solitude.jpg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-footer">
+                            By Gabriel Garcia Marquez
+                        </div>
+                        <div class="back">
+                            <div class="back-content">
+                                <h1 class="font-weight-light font-italic">ONLY FOR</h1>
+                                <h3 class="mb-3">$15</h3>
+                                <p><del>$120</del></p>
+                                <a href="#" class="btn btn-outline-danger px-4">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col p-4 text-center">
+                    <h1 class="text-light">Become Our Member</h1>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-10 mx-auto">
+                    <form class="form-inline mx-auto border rounded p-5 mb-2">
+                        <!-- to center elements, NOT on the form tag but on the elements INSIDE (input and a) -->
+                        <input type="email" class="form-control w-50 mx-auto" placeholder="Email">
+                        <a href="#" class="btn btn-outline-danger w-25 mx-auto">Sign Up</a>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item nav-item mr-5">
+                            <i class="fab fa-facebook fa-2x text-primary"></i>
+                        </li>
+                        <li class="list-inline-item nav-item mr-5">
+                            <i class="fab fa-twitter fa-2x text-info"></i>
+                        </li>
+                        <li class="list-inline-item nav-item mr-5">
+                            <i class="fab fa-instagram fa-2x text-danger"></i>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <i class="fab fa-linkedin fa-2x text-info"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="container-fluid">
+            <div class="row pb-3">
+                <div class="col text-center">
+                    <ul class="nav nav-tabs justify-content-center">
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">Home</a>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">About us</a>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">Library</a>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">Deals</a>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">Reviews</a>
+                        </li>
+                        <li class="list-inline-item nav-item">
+                            <a href="#" class="nav-link text-light text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-light text-center">
+                    <p>© Copyright 2023. Made by CodeAndCreate</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <section class="famous-writers pb-5"> -->
+    <!-- The advantage to add a FLUID container here is that the row is LARGER! you can add MORE elements -->
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center py-5">
+                <h1 class="text-secondary text-uppercase font-italic common-title my-3">The Most Famous Writers</h1>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-4 text-center align-self-center">
+                <img src="img/writers/William_Shakespeare-book1.jpg" class="img-fluid" id="book-1" alt="">
+            </div>
+            <div class="col-lg-4 mx-auto text-center">
+                <div id="accordion" class="writers-accordion">
+                    <div class="card">
+                        <div class="card-header p-5">
+                            <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                data-toggle="collapse" data-target="#collapse1" id="button-William_Shakespeare">
+                                William Shakespeare
+                            </button>
+                        </div>
+                        <div id="collapse1" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="img/writers/William_Shakespeare.jpg" class="card-img-top img-fluid"
+                                        alt="">
+                                    <-- Weird to add ANOTHER card-body here but it adds some padding x on the elements which is quite nice! -->
+                                    <!-- <div class="card-body ">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Laudantium, ducimus!</p>
+                                        <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-5">
+                            <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                data-toggle="collapse" data-target="#collapse2" id="button-Jane_Austen">
+                                Jane Austen
+                            </button>
+                        </div>
+                        <div id="collapse2" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="img/writers/Jane_Austen.jpg" class="card-img-top img-fluid" alt="">
+                                    <div class="card-body ">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Laudantium, ducimus!
+                                        </p>
+                                        <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-5">
+                            <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                data-toggle="collapse" data-target="#collapse3" id="button-Charles_Dickens">
+                                Charles Dickens
+                            </button>
+                        </div>
+                        <div id="collapse3" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="img/writers/Charles_Dickens.jpg" class="card-img-top img-fluid" alt="">
+                                    <div class="card-body ">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Laudantium, ducimus!
+                                        </p>
+                                        <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header p-5">
+                            <button class="btn btn-outline-danger btn-block text-danger" type="button"
+                                data-toggle="collapse" data-target="#collapse4" id="button-Victor_Hugo">
+                                Victor Hugo
+                            </button>
+                        </div>
+                        <div id="collapse4" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="img/writers/Victor_Hugo.jpg" class="card-img-top img-fluid" alt="">
+                                    <div class="card-body ">
+                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Laudantium, ducimus!
+                                        </p>
+                                        <a href="#" class="btn btn-block btn-primary">More Books</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <a href="#" class="btn btn-block btn-outline-info">More Writers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center align-self-center">
+                <img src="img/writers/William_Shakespeare-book2.jpg" class="img-fluid" id="book-2" alt="">
+            </div>
+        </div>
+    </div>
+</section>  -->

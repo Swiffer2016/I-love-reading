@@ -1,0 +1,284 @@
+/* NAVIGATION BAR section */
+.hamburger-menu {
+    width: 65px;
+    height: 65px;
+    background-color: #7f7b82;
+    position: fixed;
+    /* Important to use the z-index because of the "fixed" position, otherwise it would be BEHIND the logo on the top-left of the screen */
+    z-index: 200;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    outline: none!important;
+    transition: all .5s;
+}
+
+.line1, .line2, .line3 {
+    /* parameters to use when you want to add a hamburger menu */
+    background-color: #eee;
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+/* To make an X on a hamburger menu */
+.change .line1 {
+    transform: rotate(-405deg) translate(-5px, 5px);
+    background-color: #776;
+}
+
+.change .line2 {
+    opacity: 0;
+    background-color: #776;
+}
+
+.change .line3 {
+    transform: rotate(405deg) translate(-5px, -5px);
+    background-color: #776;
+}
+
+.change .hamburger-menu {
+    background-color: #eef0eb;
+}
+
+.change .bg-cover {
+    transform: scale(150);
+}
+
+.bg-cover {
+    background-color: rgba(35,37,40,0.98);
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    /* CAREFUL! as .bg-cover is SMALLER you cannot use the same parameters for "top" and "right", they're HIGHER! (use opacity on
+    .hamburger-menu to place it properly */
+    top: 35px;
+    right: 35px;
+    z-index: 100;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.nav-content {
+    position: fixed;
+    /* Z-index number must be higher than .bg-color class BUT smaller than .hamburger-menu class */
+    z-index: 150;
+    width: 100%;
+}
+
+.link-item {
+    font-size: 20px;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.link-item:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 50% 50% 0 0;
+    background: rgba(0,0,0,0.3);
+}
+
+
+/* HEADER section */
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),url('../img/header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.banner-heading:first-letter {
+    font-family: "Great Vibes", cursive;
+    font-size: 10rem;
+    margin-right: 15px;
+}
+
+.banner-heading img {
+    animation: beating 2s infinite;
+}
+
+@keyframes beating {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* GALLERY section */
+.common-title {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #aaa;
+    transition: all 0.5s;
+}
+
+.common-title::first-letter {
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    margin-right: 10px;
+    font-style: normal;
+}
+
+.common-title:hover {
+    transform: translate(-5px, -3px);
+    text-shadow: 2px 5px 20px #aaa;
+}
+
+.gallery-img {
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.first-row {
+    animation-name: first-row-roll;
+    animation-duration: 2.5s;
+}
+
+@keyframes first-row-roll {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+.second-row {
+    animation-name: second-row-roll;
+    animation-duration: 2.5s;
+}
+
+@keyframes second-row-roll {
+    0% {
+        transform: translateX(300px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+/* FAMOUS WRITERS section */
+.famous-writers {
+    background-image: linear-gradient(rgba(250,250,250,0.8), rgba(250,250,250,0.9)),url('../img/writers-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* SUGGESTED BOOKS section */
+/* .suggested-books {
+    height: 100vh;
+    background-image: url('../img/wood-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.books {
+    position: relative;
+    height: 50vh;
+}
+
+.book {
+    /* do NOT work with the line "position: absolute */
+    /* position: absolute;
+    width: 35%;
+    box-shadow: 5px 5px 15px #444;
+    border-right: 5px solid #777;
+    border-bottom: 10px solid #444;
+} */
+
+/* .book-1 {
+    top: 5%;
+    left: 20%;
+    transform: rotate(-45deg);
+}
+
+.book-2 {
+    top: 20%;
+    left: 50%;
+    transform: rotate(40deg);
+}
+
+.book-4 {
+    top: 40%;
+    left: 40%;
+    transform: rotate(55deg);
+}
+
+.book-3 {
+    top: 35%;
+    left: 10%;
+    transform: rotate(-38deg);
+}  */
+
+/* POPULAR BOOKS section */
+.book-card {
+    position: relative;
+    box-shadow: 5px 15px 50px #aaa;
+    max-width: 420px;
+    transition: all .8s;
+    overflow: hidden;
+}
+
+.back {
+    position: absolute;
+    top: -100%;
+    background-color: #fefefe;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transition: top .8s, opacity 0.4s;
+}
+
+.back-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotate {
+    perspective: 100rem;
+}
+
+.rotate:hover .book-card {
+    transform: rotateY(180deg);
+}
+
+.rotate:hover .back {
+    opacity: 1;
+    top: 0;
+    user-select: auto;
+    pointer-events: auto;
+}
+
